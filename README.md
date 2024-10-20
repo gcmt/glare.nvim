@@ -20,6 +20,8 @@ require("nvim-treesitter.configs").setup({
 })
 ```
 
+You'll also need a [patched font](https://www.nerdfonts.com/) for icons support.
+
 ## Enabling tags support
 
 To enable support for tags you need to build the `markdown_inline` parser by yourself with the right [extension](https://github.com/tree-sitter-grammars/tree-sitter-markdown/tree/be81c59efc552bd875650fe078bf6b78d57330ca?tab=readme-ov-file#extensions) enabled. The `tree-sitter` command line tool must be installed first:
