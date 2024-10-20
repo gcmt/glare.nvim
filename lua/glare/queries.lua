@@ -46,7 +46,9 @@ function M.get(lang)
 				logger.debug(parsed)
 			end
 		end
-		table.insert(ret, cache[query])
+		if cache[query] then
+			table.insert(ret, cache[query])
+		end
 	end
 	return ret
 end
