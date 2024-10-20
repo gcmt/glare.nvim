@@ -63,6 +63,7 @@ Rendering is done as soon as you open a markdown file. Use the `:Glare` command 
 - `GlareSeparator` Separator.
 - `GlareBlockquoteMarker` Blockquote marker.
 - `GlareHeadingUnderline` Heading underline.
+- `GlareHeadingLineAbove` Heading line above.
 - `GlareTagIcon` Tag icon.
 - `GlareTagBg` Tag background.
 - `GlareCalloutText` Callout text.
@@ -128,6 +129,9 @@ glare.opt.tag.padding = " "
 ### Heading
 
 ```lua
+-- add empty virtual lines above every heading
+glare.opt.heading.lines_above = 1
+
 glare.opt.heading.underlines.h1 = "━"
 glare.opt.heading.underlines.h2 = "━"
 glare.opt.heading.underlines.h3 = "🭷"

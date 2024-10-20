@@ -10,6 +10,7 @@ M.colors = {
 	GlareSeparator = "NonText",
 	GlareBlockquoteMarker = "NonText",
 	GlareHeadingUnderline = "NonText",
+	GlareHeadingLineAbove = "Normal",
 	GlareTagIcon = "Normal",
 	GlareTagBg = "CursorColumn",
 	GlareCalloutText = "Normal",

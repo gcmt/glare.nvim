@@ -19,12 +19,18 @@ function M.render(marker, config, node, metadata, context)
 		invalidate = true,
 	})
 
-	marker:mark(row1, col2, {
-		virt_lines = { { { " ", "GlareHeadingUnderline" } } },
-		virt_text_pos = "inline",
-		virt_lines_above = true,
-		invalidate = true,
-	})
+	if config.heading.lines_above > 0 then
+		local lines = {}
+		for _ = 1, config.heading.lines_above do
+			table.insert(lines, { { " ", "GlareHeadingLineAbove" } })
+		end
+		marker:mark(row1, col2, {
+			virt_lines = lines,
+			virt_text_pos = "inline",
+			virt_lines_above = true,
+			invalidate = true,
+		})
+	end
 
 	-- conceal hash characters
 	marker:mark(row1, col1, {

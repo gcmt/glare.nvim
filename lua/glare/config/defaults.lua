@@ -37,6 +37,7 @@ return {
 	},
 
 	heading = {
+		lines_above = 1,
 		underlines = {
 			h1 = "━",
 			h2 = "━",

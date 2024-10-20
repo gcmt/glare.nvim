@@ -51,6 +51,7 @@ return {
 	["tag.padding"] = typeof("string"),
 
 	["heading"] = typeof("table"),
+	["heading.lines_above"] = typeof("number"),
 	["heading.underlines"] = typeof("table"),
 	["heading.underlines.h1"] = typeof("string"),
 	["heading.underlines.h2"] = typeof("string"),
