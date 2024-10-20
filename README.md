@@ -22,7 +22,7 @@ require("nvim-treesitter.configs").setup({
 
 ## Enabling tags support
 
-To have support for tags you need to build the `markdown_inline` parser by yourself with the right [extension](https://github.com/tree-sitter-grammars/tree-sitter-markdown/tree/be81c59efc552bd875650fe078bf6b78d57330ca?tab=readme-ov-file#extensions) enabled. The `tree-sitter` comamnd line tool must be installed first:
+To enable support for tags you need to build the `markdown_inline` parser by yourself with the right [extension](https://github.com/tree-sitter-grammars/tree-sitter-markdown/tree/be81c59efc552bd875650fe078bf6b78d57330ca?tab=readme-ov-file#extensions) enabled. The `tree-sitter` command line tool must be installed first:
 
 ```sh
 $ git clone https://github.com/tree-sitter-grammars/tree-sitter-markdown/
