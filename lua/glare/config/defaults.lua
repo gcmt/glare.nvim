@@ -11,12 +11,19 @@ return {
 	},
 
 	link = {
-		icon_internal = " 󰌹 ",
-		icon_external = "  ",
+		icon_internal = "󰌹",
+		icon_external = "",
+		icon_position = "left",
 	},
 
 	wikilink = {
-		icon = " 󰌹 ",
+		icon = "󰌹",
+		icon_position = "left",
+	},
+
+	image = {
+		icon = "",
+		icon_position = "left",
 	},
 
 	list = {
@@ -29,10 +36,6 @@ return {
 
 	separator = {
 		marker = "🭷",
-	},
-
-	image = {
-		icon = "  ",
 	},
 
 	tag = {

@@ -19,7 +19,16 @@ function M.render(marker, config, node, metadata, context)
 	end
 
 	-- add icon
-	marker:mark(row1, col2, {
+	local icon_col
+	local has_space = string.match(icon, "%s")
+	if config.link.icon_position == "left" then
+		icon_col = col1
+		icon = has_space and icon or icon .. " "
+	else
+		icon_col = col2
+		icon = has_space and icon or " " .. icon .. " "
+	end
+	marker:mark(row1, icon_col, {
 		virt_text = { { icon, "GlareLinkIcon" } },
 		virt_text_pos = "inline",
 		invalidate = true,

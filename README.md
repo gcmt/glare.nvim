@@ -92,14 +92,23 @@ glare.opt.codeblock.padding = "  "
 ### Link
 
 ```lua
-glare.opt.link.icon_internal = " 󰌹 "
-glare.opt.link.icon_external = "  "
+glare.opt.link.icon_internal = "󰌹"
+glare.opt.link.icon_external = ""
+glare.opt.link.icon_position = "left" -- left or right
 ```
 
-### Wikiink
+### Wiki Link
 
 ```lua
-glare.opt.wikilink.icon = " 󰌹 "
+glare.opt.wikilink.icon = "󰌹"
+glare.opt.wikilink.icon_position = "left" -- left or right
+```
+
+### Image
+
+```lua
+glare.opt.image.icon = ""
+glare.opt.image.icon_position = "left" -- left or right
 ```
 
 ### List
@@ -118,12 +127,6 @@ glare.opt.metadata.marker = "🭷"
 
 ```lua
 glare.opt.separator.marker = "🭷"
-```
-
-### Image
-
-```lua
-glare.opt.image.icon = "  "
 ```
 
 ### Tag

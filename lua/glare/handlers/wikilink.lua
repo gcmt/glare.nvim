@@ -22,8 +22,18 @@ function M.render(marker, config, node, metadata, context)
 	})
 
 	-- add icon
-	marker:mark(row1, col2, {
-		virt_text = { { config.wikilink.icon, "GlareWikilinkIcon" } },
+	local icon_col
+	local icon = config.wikilink.icon
+	local has_space = string.match(icon, "%s")
+	if config.wikilink.icon_position == "left" then
+		icon_col = col1
+		icon = has_space and icon or icon .. " "
+	else
+		icon_col = col2
+		icon = has_space and icon or " " .. icon .. " "
+	end
+	marker:mark(row1, icon_col, {
+		virt_text = { { icon, "GlareWikilinkIcon" } },
 		virt_text_pos = "inline",
 		invalidate = true,
 	})

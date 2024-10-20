@@ -33,9 +33,15 @@ return {
 	["link"] = typeof("table"),
 	["link.icon_internal"] = typeof("string"),
 	["link.icon_external"] = typeof("string"),
+	["link.icon_position"] = oneof("left", "right"),
 
 	["wikilink"] = typeof("table"),
 	["wikilink.icon"] = typeof("string"),
+	["wikilink.icon_position"] = oneof("left", "right"),
+
+	["image"] = typeof("table"),
+	["image.icon"] = typeof("string"),
+	["image.icon_position"] = oneof("left", "right"),
 
 	["list"] = typeof("table"),
 	["list.markers"] = typeof("table"),
@@ -45,9 +51,6 @@ return {
 
 	["separator"] = typeof("table"),
 	["separator.marker"] = typeof("string"),
-
-	["image"] = typeof("table"),
-	["image.icon"] = typeof("string"),
 
 	["tag"] = typeof("table"),
 	["tag.icon"] = typeof("string"),
