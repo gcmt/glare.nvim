@@ -15,6 +15,10 @@ return {
 		icon_external = "  ",
 	},
 
+	wikilink = {
+		icon = " 󰌹 ",
+	},
+
 	list = {
 		markers = { "∙" },
 	},

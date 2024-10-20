@@ -29,6 +29,9 @@ local queries = {
 		[[
 			(tag) @tag
 		]],
+		[[
+			(wiki_link) @wikilink
+		]],
 	},
 }
 

@@ -22,9 +22,9 @@ require("nvim-treesitter.configs").setup({
 
 You'll also need a [patched font](https://www.nerdfonts.com/) for icons support.
 
-## Enabling tags support
+## Enabling Tags and Wiki Links support
 
-To enable support for tags you need to build the `markdown_inline` parser by yourself with the right [extension](https://github.com/tree-sitter-grammars/tree-sitter-markdown?tab=readme-ov-file#extensions) enabled. The `tree-sitter` command line tool must be installed first:
+To enable support for [tags](https://help.obsidian.md/Editing+and+formatting/Tags) and [wiki links](https://help.obsidian.md/Linking+notes+and+files/Internal+links) you need to build the `markdown_inline` parser by yourself with the right [extension](https://github.com/tree-sitter-grammars/tree-sitter-markdown?tab=readme-ov-file#extensions) enabled. The `tree-sitter` command line tool and `node.js` must be installed first:
 
 ```sh
 $ git clone https://github.com/tree-sitter-grammars/tree-sitter-markdown/
@@ -57,6 +57,7 @@ Rendering is done as soon as you open a markdown file. Use the `:Glare` command 
 - `GlareCodeblockBg` Code block background.
 - `GlareCodeinlineBg` Inline code background.
 - `GlareLinkIcon` Link icon.
+- `GlareWikilinkIcon` Wikilink icon.
 - `GlareImageIcon` Image icon.
 - `GlareListMarker` List marker.
 - `GlareMetadataMarker` Metadata marker.
@@ -93,6 +94,12 @@ glare.opt.codeblock.padding = "  "
 ```lua
 glare.opt.link.icon_internal = " 󰌹 "
 glare.opt.link.icon_external = "  "
+```
+
+### Wikiink
+
+```lua
+glare.opt.wikilink.icon = " 󰌹 "
 ```
 
 ### List

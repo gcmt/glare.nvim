@@ -4,6 +4,7 @@ M.colors = {
 	GlareCodeblockBg = "ColorColumn",
 	GlareCodeinlineBg = "ColorColumn",
 	GlareLinkIcon = "Normal",
+	GlareWikilinkIcon = "Normal",
 	GlareImageIcon = "Normal",
 	GlareListMarker = "Normal",
 	GlareMetadataMarker = "NonText",

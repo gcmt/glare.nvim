@@ -6,6 +6,7 @@ local handlers = {
 	codeinline = require("glare.handlers.codeinline").render,
 	blockquote = require("glare.handlers.blockquote").render,
 	link = require("glare.handlers.link").render,
+	wikilink = require("glare.handlers.wikilink").render,
 	list = require("glare.handlers.list").render,
 	image = require("glare.handlers.image").render,
 	separator = require("glare.handlers.separator").render,

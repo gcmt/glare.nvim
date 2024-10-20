@@ -34,6 +34,9 @@ return {
 	["link.icon_internal"] = typeof("string"),
 	["link.icon_external"] = typeof("string"),
 
+	["wikilink"] = typeof("table"),
+	["wikilink.icon"] = typeof("string"),
+
 	["list"] = typeof("table"),
 	["list.markers"] = typeof("table"),
 
