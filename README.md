@@ -5,6 +5,8 @@
     <p>Very opinionated markdown rendered.</p>
 </div>
 
+![Preview](assets/screenshot.png "Preview.")
+
 ## Requirements
 
 A [patched font](https://www.nerdfonts.com/) for icons support.
