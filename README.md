@@ -7,6 +7,8 @@
 
 ## Requirements
 
+A [patched font](https://www.nerdfonts.com/) for icons support.
+
 [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) with the `markdown` and `markdown_inline` parsers installed.
 
 ```lua
@@ -19,8 +21,6 @@ require("nvim-treesitter.configs").setup({
     ...
 })
 ```
-
-You'll also need a [patched font](https://www.nerdfonts.com/) for icons support.
 
 ## Enabling Tags and Wiki Links support
 
@@ -74,7 +74,7 @@ Rendering is done as soon as you open a markdown file. Use the `:Glare` command 
 ### Generic options
 
 ```lua
-glare.opt.debug = false
+glare.opt.verbosity = vim.log.levels.INFO
 ```
 
 ### Blockquote
@@ -182,7 +182,7 @@ glare.opt.callout.warning = { overlay = "󰀪 Warning", hlgroup = "GlareCalloutT
 ## Missing Features
 
 - Table rendering.
-- Wiki link rendering.
+- Different icons for nested lists.
 
 ## License
 
