@@ -22,7 +22,7 @@ local queries = {
 	markdown_inline = {
 		[[
 			(code_span) @codeinline
-			((shortcut_link) @callout (#match? "^[!"))
+			((shortcut_link) @callout (#match? @callout "^\\[!"))
 			(inline_link) @link
 			(image) @image
 		]],
