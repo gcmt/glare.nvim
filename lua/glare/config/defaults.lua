@@ -30,6 +30,11 @@ return {
 		markers = { "∙" },
 	},
 
+	tasklist = {
+		icon_checked = "",
+		icon_unchecked = "",
+	},
+
 	metadata = {
 		marker = "🭷",
 	},

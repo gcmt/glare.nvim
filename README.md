@@ -62,6 +62,8 @@ Rendering is done as soon as you open a markdown file. Use the `:Glare` command 
 - `GlareWikilinkIcon` Wikilink icon.
 - `GlareImageIcon` Image icon.
 - `GlareListMarker` List marker.
+- `GlareTasklistMarkerChecked` Tasklist checked icon.
+- `GlareTasklistMarkerUnchecked` Tasklist unchecked icon.
 - `GlareMetadataMarker` Metadata marker.
 - `GlareSeparator` Separator.
 - `GlareBlockquoteMarker` Blockquote marker.
@@ -117,6 +119,13 @@ glare.opt.image.icon_position = "left" -- left or right
 
 ```lua
 glare.opt.list.markers = { "∙" }
+```
+
+### Taskist
+
+```lua
+glare.opt.tasklist.icon_checked = ""
+glare.opt.tasklist.icon_unchecked = ""
 ```
 
 ### Metadata

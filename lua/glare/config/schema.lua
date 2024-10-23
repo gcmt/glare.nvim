@@ -46,6 +46,10 @@ return {
 	["list"] = typeof("table"),
 	["list.markers"] = typeof("table"),
 
+	["tasklist"] = typeof("table"),
+	["tasklist.icon_checked"] = typeof("string"),
+	["tasklist.icon_unchecked"] = typeof("string"),
+
 	["metadata"] = typeof("table"),
 	["metadata.marker"] = typeof("string"),
 
